@@ -24,6 +24,7 @@
 			<About class="tab-item" id="aboutTab" />
 			<Skill class="tab-item" id="skillTab" />
 			<Project class="tab-item" id="projectTab" />
+			<Education class="tab-item" id="educationTab" />
 		</div>
     </div>
 </template>
@@ -61,12 +62,21 @@ export default {
 				"background-repeat": 'no-repeat',
 			})
 		},
+		setEducationBackground() {
+			this.$store.dispatch('global/setBackgroundProperties', {
+				"background-image": "url('/images/education_bg.webp')",
+				"background-size": '50%',
+				"background-position": 'right',
+				"background-repeat": 'no-repeat',
+			})
+		},
 		scrollNavigation(event) {
 			let bodyRect = document.body.getBoundingClientRect()
 			let mainTab = document.getElementById('mainTab')
 			let aboutTab = document.getElementById('aboutTab')
 			let skillTab = document.getElementById('skillTab')
 			let projectTab = document.getElementById('projectTab')
+			let educationTab = document.getElementById('educationTab')
 
 			let elemRect = mainTab.getBoundingClientRect()
 			let Mainoffset   = elemRect.top - bodyRect.top;
@@ -79,6 +89,9 @@ export default {
 
 			let projectRect = projectTab.getBoundingClientRect()
 			let projectoffset   = projectRect.top - bodyRect.top;
+
+			let educationRect = educationTab.getBoundingClientRect()
+			let educationoffset   = educationRect.top - bodyRect.top;
 
 			let windowHeight = window.innerHeight
 
@@ -96,6 +109,10 @@ export default {
 
 			if ((projectoffset >= 0) && (projectoffset <= (windowHeight / 2)))  {
 				this.setProjectBackground()
+			}
+
+			if ((educationoffset >= 0) && (educationoffset <= (windowHeight / 2)))  {
+				this.setEducationBackground()
 			}
 		}
 	},
