@@ -94,3 +94,14 @@ h1 {
 .top-bg {
     z-index: 1;
 }
+
+.normal-page {
+    margin: 30px 150px;
+    width: 100%;
+    box-sizing: border-box;
+
+    //mobile
+    @media(max-width: 960px) {
+        margin: 20px 30px;
+    }
+}
