@@ -57,6 +57,12 @@
         gap: 30px;
         align-items: center;
 
+        //mobile
+		@media(max-width: 960px) {
+            flex-direction: column;
+            margin-top: 30px;
+		}
+
         .skill-img {
             background-color: #323232;
             width: 350px;
@@ -80,10 +86,22 @@
         align-items: center;
         flex-wrap: wrap;
 
+        //mobile
+		@media(max-width: 960px) {
+            gap: 15px;
+            margin-top: 30px;
+            justify-content: center;
+		}
+
         .skill-item {
             display: flex;
             flex-direction: column;
             width: 23%;
+
+            //mobile
+            @media(max-width: 960px) {
+                width: 45%;
+            }
 
             .skill-img {
                 background-color: #323232;
