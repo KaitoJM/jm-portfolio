@@ -144,7 +144,7 @@ export default {
 }
 
 .tab-item {
-	padding: 0 20px;
+	padding: 20px 20px;
 	box-sizing: border-box;
     width: 100%;
 	padding-right: 120px;
