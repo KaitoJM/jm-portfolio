@@ -18,9 +18,22 @@
 	align-items: center;
 	position: relative;
 
+	//mobile
+	@media(max-width: 960px) {
+		.space {
+			display: none;
+		}
+	}
+
 	.text-container {
         width: 50%;
 		z-index: 1;
+
+		//mobile
+		@media(max-width: 960px) {
+			margin-top: 100px;
+			width: 100%;
+		}
 	}
 }
 </style>
