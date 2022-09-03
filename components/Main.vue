@@ -38,11 +38,11 @@
 
     @media(max-width: 1845px) {background-position-x: 83%;}
     @media(max-width: 1613px) {background-position-x: 95%;}
-    @media(max-width: 1421px) {background-position-x: 122%;}
-    @media(max-width: 1278px) {background-position-x: 149%;}
-    @media(max-width: 1207px) {background-position-x: 182%;}
-    @media(max-width: 1133px) {background-position-x: 237%;}
-    @media(max-width: 1048px) {background-position-x: 265%;}
+    @media(max-width: 1421px) {background-position-x: 111%;}
+    @media(max-width: 1278px) {background-position-x: 120%;}
+    @media(max-width: 1207px) {background-position-x: 136%;}
+    @media(max-width: 1133px) {background-position-x: 140%;}
+    @media(max-width: 1048px) {background-position-x: 136%;}
 
     .text-container {
         width: 460px;

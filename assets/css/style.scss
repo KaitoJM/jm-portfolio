@@ -15,6 +15,16 @@ html, body {
     position: fixed;
     bottom: 30px;
     right: 50px;
+    z-index: 99;
+
+    // mobile
+	@media(max-width: 960px) {
+		bottom: 0px;
+        right: 0px;
+        width: 100%;
+        box-sizing: border-box;
+        height: 80px;
+	}
 
     ul {
         margin: 0px;
@@ -23,9 +33,21 @@ html, body {
         display: flex;
         gap: 20px;
 
+        // mobile
+        @media(max-width: 960px) {
+            justify-content: center;
+        }
+
         li {
             a {
                 font-size: 1.3em;
+
+                // mobile
+                @media(max-width: 960px) {
+                    font-size: 2em;
+                    display: block;
+                    padding: 15px;
+                }
             }
         }
     }

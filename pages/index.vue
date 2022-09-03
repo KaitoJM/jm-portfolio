@@ -127,6 +127,24 @@ export default {
 	margin-top: 50vh;
 	transform: translateY(-50%);
 	margin-left: 100px;
+	z-index: 99;
+
+	@media(max-width: 1110px) {
+		margin-left: 50px;
+	}
+
+	// mobile
+	@media(max-width: 960px) {
+		position: fixed;
+		border-radius: 0px;
+		width: 100%;
+		top: 33px;
+		left: 0;
+		margin: 0;
+		padding: 15px;
+		box-sizing: border-box;
+		align-items: center;
+	}
 
 	ul {
 		margin: 0px;
@@ -136,6 +154,13 @@ export default {
 		flex-direction: column;
 		gap: 25px;
 		justify-content: center;
+
+		// mobile
+		@media(max-width: 960px) {
+			flex-direction: row;
+			align-items: center;
+			gap: 30px;
+		}
 
 		li {
 			a {
@@ -165,6 +190,22 @@ export default {
     width: 100%;
 	padding-right: 120px;
 	padding-left: 150px;
+
+	@media(max-width: 1210px) {
+		padding-right: 70px;
+		padding-left: 100px;
+	}
+
+	@media(max-width: 1110px) {
+		padding-right: 20px;
+		padding-left: 50px;
+	}
+
+	// mobile
+	@media(max-width: 960px) {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
 }
 
 #mainTab {
