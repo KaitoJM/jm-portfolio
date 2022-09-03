@@ -39,6 +39,12 @@
         gap: 30px;
         align-items: center;
 
+        //mobile
+		@media(max-width: 960px) {
+            flex-direction: column;
+            margin-top: 30px;
+		}
+
         .project-img {
             background-color: #323232;
             width: 350px;
@@ -51,6 +57,11 @@
 
             h3 {
                 font-size: 1.3em;
+
+                //mobile
+                @media(max-width: 960px) {
+                    font-size: 1em;
+                }
             }
         }
     }

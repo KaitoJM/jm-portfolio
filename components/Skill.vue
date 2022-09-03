@@ -75,6 +75,11 @@
 
             h3 {
                 font-size: 1.3em;
+
+                //mobile
+                @media(max-width: 960px) {
+                    font-size: 1em;
+                }
             }
         }
     }
@@ -114,6 +119,11 @@
                 text-align: center;
                 margin-top: 10px;
                 display: block;
+
+                //mobile
+                @media(max-width: 960px) {
+                    font-size: 1em;
+                }
             }
         }
 
