@@ -23,6 +23,7 @@
 			<Main class="tab-item" id="mainTab" />
 			<About class="tab-item" id="aboutTab" />
 			<Skill class="tab-item" id="skillTab" />
+			<Project class="tab-item" id="projectTab" />
 		</div>
     </div>
 </template>
@@ -52,11 +53,20 @@ export default {
 				"background-repeat": 'no-repeat',
 			})
 		},
+		setProjectBackground() {
+			this.$store.dispatch('global/setBackgroundProperties', {
+				"background-image": "url('/images/project_bg.webp')",
+				"background-size": 'cover',
+				"background-position": 'center',
+				"background-repeat": 'no-repeat',
+			})
+		},
 		scrollNavigation(event) {
 			let bodyRect = document.body.getBoundingClientRect()
 			let mainTab = document.getElementById('mainTab')
 			let aboutTab = document.getElementById('aboutTab')
 			let skillTab = document.getElementById('skillTab')
+			let projectTab = document.getElementById('projectTab')
 
 			let elemRect = mainTab.getBoundingClientRect()
 			let Mainoffset   = elemRect.top - bodyRect.top;
@@ -67,9 +77,11 @@ export default {
 			let skillRect = skillTab.getBoundingClientRect()
 			let skilloffset   = skillRect.top - bodyRect.top;
 
+			let projectRect = projectTab.getBoundingClientRect()
+			let projectoffset   = projectRect.top - bodyRect.top;
+
 			let windowHeight = window.innerHeight
 
-			console.log(Mainoffset, Aboutoffset, skilloffset)
 			if ((Mainoffset >= 0) && (Mainoffset <= windowHeight / 2)) {
 				this.setNullBackground()
 			}
@@ -80,6 +92,10 @@ export default {
 
 			if ((skilloffset >= 0) && (skilloffset <= (windowHeight / 2)))  {
 				this.setSkillBackground()
+			}
+
+			if ((projectoffset >= 0) && (projectoffset <= (windowHeight / 2)))  {
+				this.setProjectBackground()
 			}
 		}
 	},
