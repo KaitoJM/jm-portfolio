@@ -21,6 +21,7 @@
 		</div>
 		<div class="page-tab-container">
 			<Main />
+			<About />
 		</div>
     </div>
 </template>
@@ -47,6 +48,7 @@
 		display: flex;
 		flex-direction: column;
 		gap: 25px;
+		justify-content: center;
 
 		li {
 			a {
@@ -67,5 +69,7 @@
 	flex: 1;
 	box-sizing: border-box;
 	padding: 0 20px;
+	height: 100vh;
+	overflow-y: auto;
 }
 </style>

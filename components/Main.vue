@@ -9,7 +9,7 @@
     </div>
 </template>
 
-.<style lang="scss" scoped>
+<style lang="scss" scoped>
 /// Stroke font-character
 /// @param  {Integer} $stroke - Stroke width
 /// @param  {Color}   $color  - Stroke color
@@ -28,8 +28,21 @@
 .main-page {
     display: flex;
     align-items: center;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
+    background-image: url('~/static/images/main_bg.webp');
+    background-size: 661px;
+    background-position-x: 77%;
+    background-position-y: 9vh;
+    background-repeat: no-repeat;
+
+    @media(max-width: 1845px) {background-position-x: 83%;}
+    @media(max-width: 1613px) {background-position-x: 95%;}
+    @media(max-width: 1421px) {background-position-x: 122%;}
+    @media(max-width: 1278px) {background-position-x: 149%;}
+    @media(max-width: 1207px) {background-position-x: 182%;}
+    @media(max-width: 1133px) {background-position-x: 237%;}
+    @media(max-width: 1048px) {background-position-x: 265%;}
 
     .text-container {
         width: 460px;
