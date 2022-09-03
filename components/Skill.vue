@@ -68,6 +68,11 @@
             width: 350px;
             height: 230px;
             border-radius: 10px;
+
+            //mobile
+            @media(max-width: 608px) {
+                width: 100%;
+            }
         }
 
         .skill-details {
@@ -112,6 +117,11 @@
                 background-color: #323232;
                 height: 230px;
                 border-radius: 10px;
+
+                //mobile
+                @media(max-width: 608px) {
+                    height: 180px
+                }
             }
     
             strong {

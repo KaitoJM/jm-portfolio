@@ -50,6 +50,11 @@
             width: 350px;
             height: 230px;
             border-radius: 10px;
+
+            //mobile
+            @media(max-width: 608px) {
+                width: 100%;
+            }
         }
 
         .project-details {

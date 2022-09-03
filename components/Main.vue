@@ -58,6 +58,11 @@
         }
     }
 
+    @media(max-width: 608px) {
+        background-size: 500px;
+        background-position-x: 14vw;
+    }
+
     .text-container {
         width: 460px;
 
@@ -102,6 +107,12 @@
                 position: absolute;
                 top: 70vh;
                 left: 31vw;
+            }
+
+            @media(max-width: 608px) {
+                top: 70vh;
+                left: 25vw;
+                width: 360px;
             }
         }
     }
