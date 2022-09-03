@@ -31,20 +31,21 @@
 export default {
 	methods: {
 		setNullBackground() {
-			this.$store.commit('global/setBackgroundProperties', {
+			this.$store.dispatch('global/setBackgroundProperties', {
 				"background-image": "none",
 			})
 		},
 		setAboutBackground() {
-			this.$store.commit('global/setBackgroundProperties', {
+			this.$store.dispatch('global/setBackgroundProperties', {
 				"background-image": "url('/images/about_bg.webp')",
 				"background-position-x": 'right',
-				"background-size": '60%',
+				"background-position-y": 'center',
+				"background-size": '70%',
 				"background-repeat": 'no-repeat',
 			})
 		},
 		setSkillBackground() {
-			this.$store.commit('global/setBackgroundProperties', {
+			this.$store.dispatch('global/setBackgroundProperties', {
 				"background-image": "url('/images/skill_bg.webp')",
 				"background-position-x": 'right',
 				"background-size": '60%',
@@ -147,7 +148,7 @@ export default {
 	box-sizing: border-box;
     width: 100%;
 	padding-right: 120px;
-	padding-left: 50px;
+	padding-left: 150px;
 }
 
 #mainTab {

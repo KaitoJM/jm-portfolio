@@ -44,7 +44,7 @@ html, body {
         display: block;
         position: fixed;
         opacity: 0.4;
-        transition: background-image 1s;
+        transition: opacity 1s;
     }
 
     .page-navigation {

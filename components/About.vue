@@ -16,11 +16,10 @@
 	height: 100vh;
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	position: relative;
 
 	.text-container {
-        width: 480px;
+        width: 50%;
 		z-index: 1;
 	}
 }
