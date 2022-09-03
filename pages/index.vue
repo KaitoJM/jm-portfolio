@@ -3,19 +3,19 @@
         <div class="nav-pointer">
 			<ul>
 				<li>
-                    <nuxt-link to="/" class="active"><fa :icon="['fas', 'circle-info']" /></nuxt-link>
+                    <a href="#" @click.stop="navigate('main')" :class="{active: active_section == 'main'}"><fa :icon="['fas', 'circle-info']" /></a>
                 </li>
 				<li>
-                    <nuxt-link to="/"><fa :icon="['fas', 'address-card']" /></nuxt-link>
+                    <a href="#" @click.stop="navigate('about')" :class="{active: active_section == 'about'}"><fa :icon="['fas', 'address-card']" /></a>
                 </li>
 				<li>
-                    <nuxt-link to="/"><fa :icon="['fa', 'lightbulb']" /></nuxt-link>
+                    <a href="#" @click.stop="navigate('skill')" :class="{active: active_section == 'skill'}"><fa :icon="['fa', 'lightbulb']" /></a>
                 </li>
 				<li>
-                    <nuxt-link to="/"><fa :icon="['fa', 'briefcase']" /></nuxt-link>
+                    <a href="#" @click.stop="navigate('project')" :class="{active: active_section == 'project'}"><fa :icon="['fa', 'briefcase']" /></a>
                 </li>
 				<li>
-                    <nuxt-link to="/"><fa :icon="['fa', 'graduation-cap']" /></nuxt-link>
+                    <a href="#" @click.stop="navigate('education')" :class="{active: active_section == 'education'}"><fa :icon="['fa', 'graduation-cap']" /></a>
                 </li>
 			</ul>
 		</div>
@@ -31,11 +31,18 @@
 
 <script>
 export default {
+	data() {
+		return {
+			active_section: 'main'
+		}
+	},
 	methods: {
 		setNullBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {
 				"background-image": "none",
 			})
+
+			this.active_section = 'main'
 		},
 		setAboutBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {
@@ -45,6 +52,8 @@ export default {
 				"background-size": '70%',
 				"background-repeat": 'no-repeat',
 			})
+
+			this.active_section = 'about'
 		},
 		setSkillBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {
@@ -53,6 +62,8 @@ export default {
 				"background-size": '60%',
 				"background-repeat": 'no-repeat',
 			})
+
+			this.active_section = 'skill'
 		},
 		setProjectBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {
@@ -61,6 +72,8 @@ export default {
 				"background-position": 'center',
 				"background-repeat": 'no-repeat',
 			})
+
+			this.active_section = 'project'
 		},
 		setEducationBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {
@@ -69,6 +82,8 @@ export default {
 				"background-position": 'right',
 				"background-repeat": 'no-repeat',
 			})
+
+			this.active_section = 'education'
 		},
 		scrollNavigation(event) {
 			let bodyRect = document.body.getBoundingClientRect()
@@ -114,6 +129,10 @@ export default {
 			if ((educationoffset >= 0) && (educationoffset <= (windowHeight / 2)))  {
 				this.setEducationBackground()
 			}
+		},
+		navigate(section) {
+			let sect = document.getElementById(`${section}Tab`)
+			document.getElementById('tabContainer').scrollTo(0, sect.offsetTop);
 		}
 	},
 	mounted () {
@@ -153,14 +172,16 @@ export default {
 	// mobile
 	@media(max-width: 960px) {
 		position: fixed;
-		border-radius: 0px;
-		width: 100%;
+		width: 90%;
 		top: 33px;
 		left: 0;
 		margin: 0;
 		padding: 15px;
 		box-sizing: border-box;
 		align-items: center;
+		margin-left: 5%;
+		margin-top: 15px;
+		box-shadow: 0 5px 36px -8px #232323;
 	}
 
 	ul {
@@ -185,9 +206,11 @@ export default {
 				display: block;
 				text-align: center;
 				color: #000;
+				transition: transform 0.5s;
 
 				&.active {
 					color: #fff;
+					transform: scale(1.3);
 				}
 			}
 		}
@@ -199,6 +222,7 @@ export default {
 	box-sizing: border-box;
 	height: 100vh;
 	overflow-y: auto;
+	scroll-behavior: smooth;
 }
 
 .tab-item {
