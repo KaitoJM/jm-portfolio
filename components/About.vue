@@ -19,21 +19,6 @@
 	justify-content: center;
 	position: relative;
 
-	&:after {
-		content: ' ';
-		display: block;
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 100%;
-		height: 100%;
-		opacity: 0.4;
-		background-image: url('~/static/images/about_bg.webp');
-		background-position-x: right;
-		background-size: 60%;
-		background-repeat: no-repeat;
-	}
-
 	.text-container {
         width: 480px;
 		z-index: 1;

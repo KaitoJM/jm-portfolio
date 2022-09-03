@@ -1,7 +1,8 @@
 <template>
     <div>
         <div class="page-container">
-            <Nuxt></Nuxt>
+            <div class="page-bg" :style="backgroundProperties"></div>
+            <Nuxt class="page-navigation"></Nuxt>
         </div>
         <div class="navs">
             <ul>
@@ -21,3 +22,14 @@
         </div>
     </div>
 </template>
+
+<script>
+import { mapGetters } from 'vuex'
+export default {
+    computed: {
+        ...mapGetters('global', [
+            "backgroundProperties",
+        ]),
+    }
+}
+</script>
