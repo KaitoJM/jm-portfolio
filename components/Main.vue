@@ -2,8 +2,10 @@
     <div class="main-page">
         <div class="text-container">
             <div class="big-outline">HELLO!</div>
-            <div class="name">I'M JOHN MARK</div>
-            <div class="role">WEB DEVELOPER</div>
+            <div class="rotatable">
+                <div class="name">I'M JOHN MARK</div>
+                <div class="role">WEB DEVELOPER</div>
+            </div>
         </div>
         <div class="space" style="width: 300px"></div>
     </div>
@@ -44,15 +46,40 @@
     @media(max-width: 1133px) {background-position-x: 140%;}
     @media(max-width: 1048px) {background-position-x: 136%;}
 
+    // mobile
+    @media(max-width: 960px) {
+        background-size: 600px;
+        background-position-y: 17vh;
+        background-position-x: 20vw;
+        position: relative;
+
+        .space {
+            display: none
+        }
+    }
+
     .text-container {
         width: 460px;
+
+        // mobile
+        @media(max-width: 960px) {
+            width: 100%;
+        }
 
         .big-outline {
             font-weight: bold;
             font-size: 6em;
-            // text-shadow:  -3px 0 #fff, 0 3px #fff, 3px 0 #fff, 0 -3px #fff;
             text-shadow: stroke(3, #fff);
             color: #000;
+
+            // mobile
+            @media(max-width: 960px) {
+                text-align: center;
+                margin-top: -300px;
+                margin-bottom: 20px;
+                font-size: 4em;
+                text-shadow: stroke(2, #fff);
+            }
         }
 
         .name {
@@ -64,6 +91,18 @@
         .role {
             text-align: right;
             font-size: 1.3em;
+        }
+
+        .rotatable {
+            // mobile
+            @media(max-width: 960px) {
+                transform: rotate(-90deg);
+                transform-origin: 0% 0%;
+                margin-right: 0px;
+                position: absolute;
+                top: 70vh;
+                left: 31vw;
+            }
         }
     }
 }
