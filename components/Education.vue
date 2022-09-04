@@ -3,7 +3,9 @@
         <div class="top-bg">
             <h1>Education</h1>
             <div class="education-item">
-                <div class="education-img"></div>
+                <div class="education-img">
+                    <img src="~/static/images/assets/nwssu_logo.webp" alt="">
+                </div>
                 <div class="education-details">
                     <h3>NorthWest Samar State University</h3>
                     <span>Bachelor of Science in Information Technology</span>
@@ -14,10 +16,12 @@
                 </div>
             </div>
             <div class="education-item">
-                <div class="education-img"></div>
+                <div class="education-img">
+                    <img src="~/static/images/assets/rlmsf_logo.webp" alt="">
+                </div>
                 <div class="education-details">
                     <h3>Raphael Lentejas Memorial School of Fisheries</h3>
-                    <span>First year to forth year</span>
+                    <span>High School: First year to forth year</span>
                     <p>
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
@@ -49,6 +53,14 @@
             width: 100px;
             height: 100px;
             border-radius: 10px;
+
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
         }
 
         .education-details {
