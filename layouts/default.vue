@@ -7,19 +7,32 @@
         <div class="navs">
             <ul>
                 <li>
-                    <nuxt-link to="/"><fa :icon="['fas', 'home']" /></nuxt-link>
+                    <nuxt-link to="/">
+                        <fa :icon="['fas', 'home']" />
+                        <span>Home</span>
+                    </nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/resume"><fa :icon="['fas', 'file-contract']" /></nuxt-link>
+                    <nuxt-link to="/resume">
+                        <fa :icon="['fas', 'file-contract']" />
+                        <span>My Résumé</span>
+                    </nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/gallery"><fa :icon="['fas', 'images']" /></nuxt-link>
+                    <nuxt-link to="/gallery">
+                        <fa :icon="['fas', 'images']" />
+                        <span>Arts & Gallery</span>
+                    </nuxt-link>
                 </li>
                 <li>
-                    <nuxt-link to="/contact"><fa :icon="['fas', 'phone-flip']" /></nuxt-link>
+                    <nuxt-link to="/contact">
+                        <fa :icon="['fas', 'phone-flip']" />
+                        <span>Contact me</span>
+                    </nuxt-link>
                 </li>
             </ul>
         </div>
+        <div class="shadower"></div>
     </div>
 </template>
 

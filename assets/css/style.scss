@@ -40,13 +40,19 @@ html, body {
 
         li {
             a {
-                font-size: 1.3em;
+                font-size: 0.8em;
+                text-decoration: none;
+
+                svg {display: none;}
 
                 // mobile
                 @media(max-width: 960px) {
                     font-size: 2em;
                     display: block;
                     padding: 15px;
+
+                    svg {display: block;}
+                    span {display: none;}
                 }
             }
         }
@@ -104,4 +110,14 @@ h1 {
     @media(max-width: 960px) {
         margin: 20px 30px;
     }
+}
+
+.shadower {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 75px;
+    box-shadow: inset 0 -41px 36px 1px #000;
+    z-index: 9;
 }
