@@ -6,7 +6,9 @@
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptas sequi perferendis, error mollitia dolorem ullam veniam eaque corporis tempore non, ipsa voluptatem ab? Repellat nemo rerum id omnis maiores quos?
             </p>
             <div class="feature-skill">
-                <div class="skill-img"></div>
+                <div class="skill-img">
+                    <img src="~/static/images/assets/laravel+vue.webp" alt="">
+                </div>
                 <div class="skill-details">
                     <h3>Laravel + Vue</h3>
                     <p>
@@ -18,28 +20,40 @@
 
             <div class="other-skills">
                 <div class="skill-item">
-                    <div class="skill-img"></div>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/laravel.webp" alt="">
+                    </div>
                     <strong>Laravel</strong>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-img"></div>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/vue.webp" alt="">
+                    </div>
                     <strong>Vue JS</strong>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-img"></div>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/nuxt.webp" alt="">
+                    </div>
                     <strong>Nuxt JS</strong>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-img"></div>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/codeigniter.webp" alt="">
+                    </div>
                     <strong>CodeIgniter</strong>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-img"></div>
-                    <strong>Nuxt JS</strong>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/javascript.webp" alt="">
+                    </div>
+                    <strong>Javascript</strong>
                 </div>
                 <div class="skill-item">
-                    <div class="skill-img"></div>
-                    <strong>CodeIgniter</strong>
+                    <div class="skill-img">
+                        <img src="~/static/images/assets/php.webp" alt="">
+                    </div>
+                    <strong>PHP</strong>
                 </div>
             </div>
         </div>
@@ -68,6 +82,18 @@
             width: 350px;
             height: 230px;
             border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.5s;
+
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            &:hover {
+                transform: scale(1.1);
+            }
 
             //mobile
             @media(max-width: 608px) {
@@ -117,6 +143,18 @@
                 background-color: #323232;
                 height: 230px;
                 border-radius: 10px;
+                overflow: hidden;
+                transition: transform 0.5s;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
 
                 //mobile
                 @media(max-width: 608px) {
