@@ -3,10 +3,10 @@
         <div class="text-container">
           	<h1>About me</h1>
 			<p>
-				I'm a software engineer specializing in both front-end and back-end development based on Philippines.<br />
+				I'm a software engineer specializing in both front-end and back-end development based in the Philippines.<br />
 				I build web application usually with Laravel and VueJS.<br />
 				My experties is in the area of responsive design but I can also do API stuffs.<br />
-				I also make digital arts sometimes but my design is merly for my own hubbies.
+				I also make digital arts sometimes but my design is merly for my own hobbies.
 			</p>
         </div>
 		<div class="space" style="width: 300px"></div>

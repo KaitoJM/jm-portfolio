@@ -3,9 +3,9 @@
         <div class="top-bg">
             <h1>My Skills</h1>
             <p>
-                When I started the world of web development back on 2015, I stumbled upon this widely known framework called CodeIgniter. <br />
-                I made a lot of project using it along side with JQuery. It was pretty cool back then but as time flies by, a lot of php and javascript framework emerged.
-                Changes need to happen in order to adapt to the newest technologies on this evolving world of web development.
+                When I started the world of web development back in 2015, I stumbled upon this widely known framework called CodeIgniter. <br />
+                I made a lot of projects using it along side with JQuery. It was pretty cool back then, but as time passed by, new php and javascript frameworks emerged.
+                In order to keep up with the new technology trends, we need to be adaptable because that is how I believe I will grow and prosper as a Web Developer.
             </p>
             <div class="feature-skill">
                 <div class="skill-img">
