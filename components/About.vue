@@ -3,16 +3,10 @@
         <div class="text-container">
           	<h1>About me</h1>
 			<p>
-				Night gathers, and now my watch begins. <br /><br />
-				It shall not end until my death. <br />
-				I shall take no wife, hold no lands, father no children. <br />
-				I shall wear no crowns and win no glory. <br />
-				I shall live and die at my post. <br />
-				I am the sword in the darkness. I am the watcher on the walls.<br />
-				I am the fire that burns against the cold, the light that brings the dawn, <br />
-				the horn that wakes the sleepers, the shield that guards the realms of men. <br />
-				I pledge my life and honor to the Night’s Watch, <br />
-				for this night and all the nights to come.
+				I'm a software engineer specializing in both front-end and back-end development based on Philippines.<br />
+				I build web application usually with Laravel and VueJS.<br />
+				My experties is in the area of responsive design but I can also do API stuffs.<br />
+				I also make digital arts sometimes but my design is merly for my own hubbies.
 			</p>
         </div>
 		<div class="space" style="width: 300px"></div>

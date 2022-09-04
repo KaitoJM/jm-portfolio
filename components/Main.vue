@@ -37,6 +37,7 @@
     background-position-x: 77%;
     background-position-y: 9vh;
     background-repeat: no-repeat;
+    box-shadow: 0 41px 50px 1px #000;
 
     @media(max-width: 1845px) {background-position-x: 83%;}
     @media(max-width: 1613px) {background-position-x: 95%;}
