@@ -90,14 +90,14 @@
             // mobile
             @media(max-width: 960px) {
                 text-align: center;
-                margin-top: -300px;
-                margin-bottom: 20px;
+                // margin-top: -300px;
+                margin-bottom: 60vh;
                 font-size: 4em;
                 text-shadow: stroke(2, #fff);
             }
 
             @media(max-width: 608px) {
-                margin-top: -115px;
+                // margin-top: -115px;
             }
         }
 
@@ -116,7 +116,7 @@
             // mobile
             @media(max-width: 960px) {
                 transform: rotate(-90deg);
-                transform-origin: 0% 0%;
+                transform-origin: 0px 0px;
                 margin-right: 0px;
                 position: absolute;
                 top: 70vh;
@@ -124,9 +124,9 @@
             }
 
             @media(max-width: 608px) {
-                top: 112vh;
-                left: 33vw;
-                width: 360px;
+                // top: 112vh;
+                // left: 33vw;
+                // width: 360px;
             }
         }
     }

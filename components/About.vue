@@ -17,7 +17,7 @@
 .about-page {
 	height: 100vh;
 	display: flex;
-	align-items: center;
+	align-items: flex-end;
 	position: relative;
 
 	//mobile
@@ -30,11 +30,12 @@
 	.text-container {
         width: 50%;
 		z-index: 1;
+		margin-bottom: 70px;
 
 		//mobile
 		@media(max-width: 960px) {
-			margin-top: 100px;
 			width: 100%;
+			margin-bottom: 30px;
 		}
 	}
 }
