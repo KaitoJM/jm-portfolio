@@ -183,6 +183,8 @@ export default {
 		box-shadow: 0 5px 36px -8px #232323;
 		margin-left: 50%;
 		transform: translateX(-50%);
+		background-color: #4b4b4bcf;
+    	backdrop-filter: blur(15px);
 	}
 
 	ul {
@@ -252,6 +254,11 @@ export default {
 	@media(max-width: 960px) {
 		padding-right: 30px;
 		padding-left: 30px;
+	}
+
+	@media(max-width: 480px) {
+		padding-right: 15px;
+		padding-left: 15px;
 	}
 }
 

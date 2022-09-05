@@ -30,6 +30,10 @@
         @media(max-width: 960px) {
             width: 48%;
         }
+
+        @media(max-width: 435px) {
+            width: 46%;
+        }
     }
 }
 </style>

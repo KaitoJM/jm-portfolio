@@ -19,7 +19,7 @@
                     </a>
                 </div>
                 <br />
-                <h3>Social media</h3>
+                <h3>Follow me</h3>
                 <div class="social-media">
                     <a href="https://www.facebook.com/Kaito.JM" target="_blank">
                         <fa :icon="['fa-brands', 'square-facebook']" />
@@ -37,6 +37,14 @@
 </template>
 
 <style lang="scss" scoped>
+//mobile
+@media(max-width: 960px) {
+    h3 {
+        margin: 0px;
+        margin-bottom: 10px;
+    }
+}
+
 .social-media {
     display: flex;
     align-items: center;
