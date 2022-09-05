@@ -64,6 +64,15 @@
         background-position-x: 14vw;
     }
 
+    @media(max-width: 460px) {
+        background-size: 350px;
+        background-position-x: 27vw;
+        background-position-y: 28vh;
+    }
+
+    @media(max-width: 380px) {background-position-x: 17vw;}
+    @media(max-width: 309px) {background-position-x: 10vw;}
+
     .text-container {
         width: 460px;
 
@@ -85,6 +94,10 @@
                 margin-bottom: 20px;
                 font-size: 4em;
                 text-shadow: stroke(2, #fff);
+            }
+
+            @media(max-width: 608px) {
+                margin-top: -115px;
             }
         }
 
@@ -111,8 +124,8 @@
             }
 
             @media(max-width: 608px) {
-                top: 70vh;
-                left: 25vw;
+                top: 112vh;
+                left: 33vw;
                 width: 360px;
             }
         }

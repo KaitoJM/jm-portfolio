@@ -172,16 +172,17 @@ export default {
 	// mobile
 	@media(max-width: 960px) {
 		position: fixed;
-		width: 90%;
-		top: 33px;
+		width: 260px;
+		top: 15px;
+		font-size: 1.2em;
 		left: 0;
 		margin: 0;
-		padding: 15px;
+		padding: 12px;
 		box-sizing: border-box;
 		align-items: center;
-		margin-left: 5%;
-		margin-top: 15px;
 		box-shadow: 0 5px 36px -8px #232323;
+		margin-left: 50%;
+		transform: translateX(-50%);
 	}
 
 	ul {
@@ -202,15 +203,20 @@ export default {
 
 		li {
 			a {
-				font-size: 1.5em;
 				display: block;
 				text-align: center;
 				color: #000;
 				transition: transform 0.5s;
+				font-size: 1.4em;
 
 				&.active {
 					color: #fff;
 					transform: scale(1.3);
+				}
+
+				// mobile
+				@media(max-width: 960px) {
+					font-size: 1.1em;
 				}
 			}
 		}

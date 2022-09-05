@@ -11,6 +11,11 @@ html, body {
     a {
         color: #fff;
     }
+
+    // mobile
+    @media(max-width: 960px) {
+        font-size: 0.9em;
+    }
 }
 
 .navs {
@@ -25,7 +30,7 @@ html, body {
         right: 0px;
         width: 100%;
         box-sizing: border-box;
-        height: 80px;
+        height: 53px;
 	}
 
     ul {
@@ -49,7 +54,7 @@ html, body {
 
                 // mobile
                 @media(max-width: 960px) {
-                    font-size: 2em;
+                    font-size: 1.8em;
                     display: block;
                     padding: 15px;
 
