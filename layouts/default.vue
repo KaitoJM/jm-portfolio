@@ -4,6 +4,9 @@
             <div class="page-bg" :style="backgroundProperties"></div>
             <Nuxt class="page-navigation"></Nuxt>
         </div>
+        <div class="copyright">
+            Copyright © 2022 JuanMarcus Portfolio
+        </div>
         <div class="navs">
             <ul>
                 <li>
