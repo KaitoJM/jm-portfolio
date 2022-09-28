@@ -36,6 +36,16 @@
     </div>
 </template>
 
+<script>
+export default {
+    head() {
+		return {
+			title: "Contact Me - Juan Marcus",
+		}
+	},
+}
+</script>
+
 <style lang="scss" scoped>
 //mobile
 @media(max-width: 960px) {

@@ -36,6 +36,11 @@ export default {
 			active_section: 'main'
 		}
 	},
+	head() {
+		return {
+			title: "Portfolio - Juan Marcus",
+		}
+	},
 	methods: {
 		setNullBackground() {
 			this.$store.dispatch('global/setBackgroundProperties', {

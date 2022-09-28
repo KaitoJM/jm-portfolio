@@ -9,3 +9,13 @@
         </div>
     </div>
 </template>
+
+<script>
+export default {
+    head() {
+		return {
+			title: "Resume - Juan Marcus",
+		}
+	},
+}
+</script>

@@ -48,7 +48,12 @@ export default {
                 },
             ]
         }
-    }
+    },
+    head() {
+		return {
+			title: "Gallery - Juan Marcus",
+		}
+	},
 }
 </script>
 
