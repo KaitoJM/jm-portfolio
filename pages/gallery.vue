@@ -19,31 +19,31 @@ export default {
         return {
             arts: [
                 {
-                    img: "images/gallery/batch2011.webp",
+                    img: "/images/gallery/batch2011.webp",
                     name: "RLMSF Batch 2011",
                 },
                 {
-                    img: "images/gallery/compass.webp",
+                    img: "/images/gallery/compass.webp",
                     name: "Traveler",
                 },
                 {
-                    img: "images/gallery/carpe-diem.webp",
+                    img: "/images/gallery/carpe-diem.webp",
                     name: "Carpe Diem",
                 },
                 {
-                    img: "images/gallery/engine.webp",
+                    img: "/images/gallery/engine.webp",
                     name: "Engine T-shirt Print",
                 },
                 {
-                    img: "images/gallery/halaba-atop.webp",
+                    img: "/images/gallery/halaba-atop.webp",
                     name: "Halaba-Atop",
                 },
                 {
-                    img: "images/gallery/talkischeap.webp",
+                    img: "/images/gallery/talkischeap.webp",
                     name: "Talk is Cheap",
                 },
                 {
-                    img: "images/gallery/onepiececap.webp",
+                    img: "/images/gallery/onepiececap.webp",
                     name: "Back at it Again",
                 },
             ]
