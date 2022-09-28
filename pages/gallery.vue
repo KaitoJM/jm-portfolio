@@ -8,32 +8,32 @@
             <img src="~/static/images/gallery/engine.webp" alt="">
             <img src="~/static/images/gallery/halaba-atop.webp" alt="">
             <img src="~/static/images/gallery/talkischeap.webp" alt="">
+            <img src="~/static/images/gallery/onepiececap.webp" alt="">
         </div>
     </div>
 </template>
 
 <style lang="scss" scoped>
 .gallery-grid {
-    display: flex;
-    align-items: flex-start;
     width: 100%;
     gap: 15px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: masonry;
+
+    //mobile
+    @media(max-width: 960px) {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    @media(max-width: 435px) {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     img {
-        width: 23%;
+        width: 100%;
         object-fit: cover;
         border-radius: 10px;
-
-        //mobile
-        @media(max-width: 960px) {
-            width: 48%;
-        }
-
-        @media(max-width: 435px) {
-            width: 46%;
-        }
     }
 }
 </style>
