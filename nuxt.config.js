@@ -41,7 +41,14 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/gtm',
   ],
+
+  gtm: {
+    id: 'GTM-MDXSN3J',
+    pageTracking: true,
+    crossOrigin: true
+  },
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
