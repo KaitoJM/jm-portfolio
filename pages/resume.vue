@@ -12,11 +12,10 @@
                     <h4>CONTACT ME</h4>
                     <ul>
                         <li>
-                            <div class="icon"><fa :icon="['fa', 'map']" /></div>
+                            <div class="icon"><fa :icon="['fa', 'envelope']" /></div>
                             <div class="content">
-                                <span class="title">Address</span>
-                                <p>Brgy. Amampacang, Tinabacan <br/>
-                                    District, Calbayog City, Samar</p>
+                                <span class="title">Email</span>
+                                <p>johnmarkmancol@gmail.com</p>
                             </div>
                         </li>
                         <li>
@@ -27,10 +26,10 @@
                             </div>
                         </li>
                         <li>
-                            <div class="icon"><fa :icon="['fa', 'envelope']" /></div>
+                            <div class="icon"><fa :icon="['fa-brands', 'linkedin']" /></div>
                             <div class="content">
-                                <span class="title">Email</span>
-                                <p>johnmarkmancol@gmail.com</p>
+                                <span class="title">LinkedIn</span>
+                                <p>https://www.linkedin.com/in/john-mark-mancol-441b30b3/</p>
                             </div>
                         </li>
                     </ul>
@@ -248,6 +247,14 @@ export default {
         print() {
             window.print();
         }
+    },
+    mounted() {
+        this.$store.dispatch('global/setBackgroundProperties', {
+            "background-image": "url('/images/project_bg.webp')",
+            "background-size": 'cover',
+            "background-position-y": '-80vh',
+            "background-repeat": 'no-repeat',
+        })
     }
 }
 </script>
@@ -388,6 +395,17 @@ export default {
 
                             @media(max-width: 960px) {
                                 font-size: 0.7em;
+                                white-space: nowrap;
+                                width: 100%;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            @media print {
+                                white-space: inherit;
+                                width: auto;
+                                overflow: visible;
+                                text-overflow: none;
                             }
                         }
                     }
