@@ -49,3 +49,11 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+@media print {
+    .copyright, .navs, .shadower {
+        display: none;
+    }
+}
+</style>

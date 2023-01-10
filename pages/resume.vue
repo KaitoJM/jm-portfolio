@@ -1,6 +1,10 @@
 <template>
     <div class="normal-page">
-        <h1>My Résumé</h1>
+        <h1 class="main-h1">My Résumé</h1>
+        <button class="print-btn" @click="print">
+            <fa :icon="['fa', 'print']" /> 
+            <span>Print</span>
+        </button>
         <div class="resume-container">
             <div class="left-panel">
                 <img src="~/static/images/resume/resume-photo.webp" alt="my-photo" class="resume-photo">
@@ -240,10 +244,43 @@ export default {
 			title: "Resume - Juan Marcus",
 		}
 	},
+    methods: {
+        print() {
+            window.print();
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+.print-btn {
+    position: fixed;
+    top: 50px;
+    right: 50px;
+    z-index: 999;
+    padding: 8px 25px;
+    text-transform: uppercase;
+    background-color: black;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+
+    @media(max-width: 960px) {
+        top: 35px;
+        right: 15px;
+        padding: 8px 10px;
+
+        span {
+            display: none;
+        }
+    }
+}
+
+@media print {
+    .main-h1, .print-btn {
+        display: none;
+    }
+}
 .resume-container {
     display: flex;
     margin-top: 30px;
@@ -252,12 +289,22 @@ export default {
         font-size: 0.8em;
     }
 
+    @media print {
+        font-size: 1em;
+    }
+
     .left-panel {
         width: 300px;
         background-color: #000;
 
         @media(max-width: 960px) {
             width: 25vw;
+        }
+
+        @media print {
+            width: 180px;
+            color: #333;
+            background-color: #fff;
         }
 
         .resume-photo {
@@ -273,6 +320,11 @@ export default {
                 width: 50px;
                 height: 50px;
             }
+
+            @media print {
+                width: 140px;
+                height: 140px;
+            }
         }
 
         .left-section {
@@ -284,6 +336,10 @@ export default {
 
                 @media(max-width: 960px) {
                     padding-bottom: 6px;
+                }
+
+                @media print {
+                    margin-top: 20px;
                 }
             }
 
@@ -299,6 +355,11 @@ export default {
                     @media(max-width: 960px) {
                         margin-bottom: 10px;
                         display: block;
+                    }
+
+                    @media print {
+                        margin-bottom: 15px;
+                        display: flex;
                     }
 
                     .icon {
@@ -348,6 +409,10 @@ export default {
             padding: 10px 15px;
         }
 
+        @media print {
+            padding: 0px 20px;
+        }
+
         .header {
             margin-bottom: 50px;
 
@@ -370,6 +435,20 @@ export default {
 
                 big {
                     font-size: 1em;
+                }
+            }
+
+            @media print {
+                margin-bottom: 10px;
+
+                h1 {
+                    font-size: 2em;
+                    margin-bottom: 5px;
+                    margin-top: 0px
+                }
+
+                big {
+                    font-size: 1.4em;
                 }
             }
         }
@@ -395,6 +474,11 @@ export default {
                         font-size: 15px;
                         line-height: 30px;
                     }
+
+                    @media print {
+                        color: #4d4d4d;
+                        border: 2px solid #4d4d4d;
+                    }
                 }
 
                 .title {
@@ -407,12 +491,20 @@ export default {
                     @media(max-width: 960px) {
                         margin-left: 8px;
                     }
+
+                    @media print {
+                        margin-left: 15px;
+                    }
                 }
             }
         }
 
         .section-content {
             margin-top: 15px;
+
+            @media print {
+                margin-top: 5px;
+            }
 
             ul {
                 margin: 0px;
@@ -428,12 +520,21 @@ export default {
                         display: block;
                     }
 
+                    @media print {
+                        display: flex;
+                        margin-bottom: 3px;
+                    }
+
                     .left-value {
                         width: 250px;
 
                         @media(max-width: 960px) {
                             width: 100%;
                             margin-bottom: 10px;
+                        }
+
+                        @media print {
+                            width: 150px;
                         }
 
                         .year {
