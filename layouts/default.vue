@@ -28,6 +28,12 @@
                     </nuxt-link>
                 </li>
                 <li>
+                    <nuxt-link to="/blogs">
+                        <fa :icon="['fas', 'feather']" />
+                        <span>Blog</span>
+                    </nuxt-link>
+                </li>
+                <li>
                     <nuxt-link to="/contact">
                         <fa :icon="['fas', 'phone-flip']" />
                         <span>Contact me</span>
