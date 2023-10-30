@@ -4,7 +4,7 @@
             <div class="big-outline">HELLO!</div>
             <div class="rotatable">
                 <div class="name">I'M JOHN MARK</div>
-                <div class="role">WEB DEVELOPER</div>
+                <div class="role">SOFTWARE ENGINEER</div>
             </div>
         </div>
         <div class="space" style="width: 300px"></div>

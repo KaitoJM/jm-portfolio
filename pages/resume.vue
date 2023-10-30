@@ -32,6 +32,13 @@
                                 <p>https://www.linkedin.com/in/john-mark-mancol-441b30b3/</p>
                             </div>
                         </li>
+                        <li>
+                            <div class="icon"><fa :icon="['fa', 'globe']" /></div>
+                            <div class="content">
+                                <span class="title">My Porfolio</span>
+                                <p>https://juanmarcus.com/</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="left-section">
@@ -50,6 +57,12 @@
                                 <p> - Vue JS <br />
                                     - Nuxt JS <br />
                                     - jQuery</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <span class="title">CMS</span>
+                                <p> - Prestashop</p>
                             </div>
                         </li>
                         <li>
@@ -217,14 +230,29 @@
                     <div class="section-content">
                         <div class="ref-grid">
                             <div class="ref-grid-item">
+                                <div class="name">Mary Hope Lacsi</div>
+                                <div class="job-title">Project Management Officer</div>
+                                <div class="job-title">Human Incubator Inc.</div>
+                                <div class="phone">Phone: 09176243420</div>
+                            </div>
+                            <div class="ref-grid-item">
                                 <div class="name">Alexandra Bernaldo</div>
                                 <div class="job-title">Web Developer</div>
+                                <div class="job-title">Qonvex Technology</div>
                                 <div class="phone">Phone: 09357716291</div>
                             </div>
                             <div class="ref-grid-item">
                                 <div class="name">Marlex Ladag</div>
                                 <div class="job-title">Prestashop Developer</div>
+                                <div class="job-title">Qonvex Technology</div>
                                 <div class="phone">Phone: 09973370079</div>
+                            </div>
+                            <div class="ref-grid-item">
+                                <div class="name">Ressil Zafra</div>
+                                <div class="job-title">Web Development &</div>
+                                <div class="job-title">Social Media Specialist</div>
+                                <div class="job-title">Avana</div>
+                                <div class="phone">09178906046</div>
                             </div>
                         </div>
                     </div>
