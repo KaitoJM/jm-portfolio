@@ -10,8 +10,13 @@
                     <h3>NorthWest Samar State University</h3>
                     <span>Bachelor of Science in Information Technology</span>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
+                        I completed my Bachelor of Science in Information Technology degree at Northwest Samar State University, a renowned institution known for its commitment to excellence in education. This program provided me with a strong foundation in Information Technology, equipping me with the knowledge and skills necessary to excel in the dynamic field of technology.
+                    </p>
+                    <p>
+                        Throughout my academic journey at Northwest Samar State University, I engaged in a comprehensive curriculum that covered a broad spectrum of IT topics, including software development, database management, network administration, and cybersecurity. These courses fostered my problem-solving abilities and honed my technical proficiencies.
+                    </p>
+                    <p>
+                        My education at Northwest Samar State University not only equipped me with the technical expertise required for the Information Technology field but also instilled in me the importance of continuous learning and adaptation in the rapidly evolving technology landscape.
                     </p>
                 </div>
             </div>
@@ -23,8 +28,13 @@
                     <h3>Raphael Lentejas Memorial School of Fisheries</h3>
                     <span>High School: First year to forth year</span>
                     <p>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
-                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit eveniet, alias maiores unde officia facere tenetur, nihil quibusdam porro repellendus iure illum eos nesciunt error est quae. Natus, error blanditiis!
+                        I completed my high school education at Rafael Lentejas Memorial School of Fisheries, a distinguished technical vocational school with a specialized focus on fisheries. My major was Culture, which provided me with a unique and comprehensive education in this field.
+                    </p>
+                    <p>
+                        During my time at Rafael Lentejas Memorial School of Fisheries, I engaged in a specialized curriculum that centered on the study of fishponds and related aspects of fisheries culture. This program not only equipped me with a strong theoretical understanding but also provided hands-on experience in the practical aspects of managing and maintaining fishponds.
+                    </p>
+                    <p>
+                        I gained in-depth knowledge about various fish species, aquaculture practices, water quality management, and sustainable fisheries management. This educational foundation has not only honed my technical skills but has also instilled in me a deep appreciation for environmental sustainability and the importance of responsible resource management.
                     </p>
                 </div>
             </div>
