@@ -236,21 +236,14 @@
                                 <div class="phone">Phone: 09176243420</div>
                             </div>
                             <div class="ref-grid-item">
-                                <div class="name">Alexandra Bernaldo</div>
-                                <div class="job-title">Web Developer</div>
-                                <div class="job-title">Qonvex Technology</div>
-                                <div class="phone">Phone: 09357716291</div>
-                            </div>
-                            <div class="ref-grid-item">
                                 <div class="name">Marlex Ladag</div>
                                 <div class="job-title">Prestashop Developer</div>
-                                <div class="job-title">Qonvex Technology</div>
+                                <div class="job-title">Rackapp IT Solutions</div>
                                 <div class="phone">Phone: 09973370079</div>
                             </div>
                             <div class="ref-grid-item">
                                 <div class="name">Ressil Zafra</div>
-                                <div class="job-title">Web Development &</div>
-                                <div class="job-title">Social Media Specialist</div>
+                                <div class="job-title">Web Development & Social Media Specialist</div>
                                 <div class="job-title">Avana</div>
                                 <div class="phone">09178906046</div>
                             </div>
@@ -314,6 +307,31 @@ export default {
 @media print {
     .main-h1, .print-btn {
         display: none;
+    }
+
+    .resume-container .main-panel .section-content {
+        margin-top: 0px;
+    }
+    .resume-container .main-panel .main-section .section-title .title {
+        font-size: 1rem;
+    }
+
+    .ref-grid {
+        gap: 10px !important;
+    }
+
+    .ref-grid-item {
+        .name {
+            font-size: 0.8em;
+        }
+
+        .job-title {
+            font-size: 0.5em !important;
+        }
+
+        .phone {
+            font-size: 0.5em !important;
+        }
     }
 }
 .resume-container {
@@ -637,6 +655,7 @@ export default {
                     .name {
                         font-weight: bold;
                         margin-bottom: 8px;
+                        font-size: 0.8em;
                     }
 
                     .job-title {
